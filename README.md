@@ -21,7 +21,8 @@ public final class PluginExampleAPIFactory : PluginFactory { // rename the class
   public func create() -> FactoryType {
     return _pluginType.init()
   }
-}```
+}
+```
 
 additionally, the concrete plugin of a given plugin api type should implement a loader with this specific signature that returns an instances of that factory class thus:
 
